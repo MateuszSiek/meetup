@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  font-size: 20px;
+  background: #141414;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 5px;
+}
+
+h1 {
+  letter-spacing: 9px;
+  font-size: 2rem;
+}
+
+button {
+  font-size: 1rem;
+  letter-spacing: 5px;
+  padding: 0.5rem 2rem;
+  background: transparent;
+  color: gray;
+  border: solid 1px grey;
+
+  &:hover {
+    color: white;
+    border-color: white;
+  }
+}

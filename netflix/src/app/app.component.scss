@@ -1,0 +1,24 @@
+main {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.__netflix-logo {
+  width: 100%;
+  transform-origin: left top;
+  transform: scale(0.1);
+}
+
+.__user {
+  display: inline-block;
+  margin: 1rem;
+  color: gray;
+  img {
+    width: 9rem;
+    height: 9rem;
+  }
+}
