@@ -1,28 +1,11 @@
 <main>
-  <h1>Who's watching?</h1>
-  <div>
-    <!-- AVAILABLE USERS -->
-    <div class="__user">
-      <img src="assets/avatar_1.png">
-      <h2 class="__username">
-        Mateusz
-      </h2>
+    <h1 [innerText]="title"></h1>
+    <div *ngIf="users?.length>0">
+        <!-- AVAILABLE USERS -->
+        <app-user *ngFor="let u of users" [user]="u" [isEditMode]="isEditMode"></app-user>
     </div>
-    <div class="__user">
-      <img src="assets/avatar_1.png">
-      <h2 class="__username">
-        Mateusz
-      </h2>
-    </div>
-    <div class="__user">
-      <img src="assets/avatar_1.png">
-      <h2 class="__username">
-        Mateusz
-      </h2>
-    </div>
-
-  </div>
-  <button>MANAGE PROFILES</button>
+    <button *ngIf="!isEditMode" (click)="isEditMode=true">MANAGE PROFILES</button>
+    <button *ngIf="isEditMode" (click)="isEditMode=false">DONE</button>
 </main>
 <img class="__netflix-logo" src="assets/netflix.png">
 <!--<router-outlet></router-outlet>-->

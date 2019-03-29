@@ -1,0 +1,32 @@
+$avatarSize: 9rem;
+
+.__edit-mode {
+  opacity: 0.3;
+}
+
+.__user {
+  display: inline-block;
+  margin: 1rem;
+  color: gray;
+  .image-container {
+    color: white;
+    position: relative;
+    width: $avatarSize;
+    height: $avatarSize;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .edit-icon {
+      position: absolute;
+      cursor: pointer;
+      padding: 5px;
+      border: 3px solid;
+      border-radius: 50%;
+      font-size: $avatarSize/3;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
