@@ -1,11 +1,6 @@
 <main>
-    <h1 [innerText]="title"></h1>
-    <div *ngIf="users?.length>0">
-        <!-- AVAILABLE USERS -->
-        <app-user *ngFor="let u of users" [user]="u" [isEditMode]="isEditMode"></app-user>
-    </div>
-    <button *ngIf="!isEditMode" (click)="isEditMode=true">MANAGE PROFILES</button>
-    <button *ngIf="isEditMode" (click)="isEditMode=false">DONE</button>
+    <app-user-list-page></app-user-list-page>
+    <!--<app-edit-profile-page></app-edit-profile-page>-->
 </main>
 <img class="__netflix-logo" src="assets/netflix.png">
 <!--<router-outlet></router-outlet>-->

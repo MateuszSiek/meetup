@@ -1,0 +1,34 @@
+<div class="__main-container">
+    <h1>Edit Profile</h1>
+    <div class="__edit-section">
+        <div class="__logo-section">
+            <img [src]="user.avatar">
+        </div>
+        <div class="__values-section">
+            <div class="__input-section">
+                <input [value]="user.name">
+            </div>
+            <div class="__input-section">
+                Language:
+                <select>
+                    <option value="pl">Polish</option>
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="de">German</option>
+                    <option value="it">Italian</option>
+                </select>
+            </div>
+            <div class="__input-section">
+                Allowed TV programmes and films
+                <select>
+                    <option value="all">All maturity levels</option>
+                    <option value="teen">For teens and below</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="__buttons-row">
+        <button class="btn-primary">SAVE</button>
+        <button>CANCEL</button>
+    </div>
+</div>

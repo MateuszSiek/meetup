@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./input.scss";
+
 html,
 body {
   font-size: 20px;
@@ -10,7 +12,15 @@ body {
 
 h1 {
   letter-spacing: 9px;
+  font-size: 3rem;
+}
+h2 {
+  letter-spacing: 9px;
   font-size: 2rem;
+}
+h3 {
+  letter-spacing: 9px;
+  font-size: 1.2rem;
 }
 
 button {
@@ -20,9 +30,19 @@ button {
   background: transparent;
   color: gray;
   border: solid 1px grey;
+  cursor: pointer;
 
   &:hover {
     color: white;
     border-color: white;
+  }
+  &.btn-primary {
+    background: white;
+    color: black;
+    border: none;
+    &:hover {
+      background: red;
+      color: white;
+    }
   }
 }

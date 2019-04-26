@@ -8,14 +8,10 @@ import {UsersService} from './services/users.service';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-    public title: string = 'Who\'s watching?';
-    public users: User[] = [];
-    public isEditMode: boolean = false;
 
-    constructor(private userService: UsersService) {
+    constructor() {
     }
 
     public ngOnInit(): void {
-        this.users = this.userService.getUsers();
     }
 }

@@ -18,4 +18,8 @@ export class UsersService {
     public getUsers(): User[] {
         return this.users;
     }
+
+    public getUser(id: number): User | undefined {
+        return this.users.find((u: User) => u.id === id);
+    }
 }

@@ -2,6 +2,7 @@ export class User {
   public id: number;
   public name: string = '';
   public avatar: string = '';
+  public language: string = 'pl';
 
   constructor({name, avatar, id}: Partial<User>) {
     this.id = id;

@@ -1,0 +1,45 @@
+.__main-container {
+  max-width: 40rem;
+  margin: auto;
+  text-align: left;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.__edit-section {
+  display: flex;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 2rem 0;
+
+  .__logo-section {
+    img {
+      width: 9rem;
+    }
+  }
+
+  .__values-section {
+    flex: 4;
+    margin-left: 1rem;
+  }
+}
+
+.__values-section {
+  input {
+    width: 90%;
+  }
+  .__input-section:not(:first-of-type){
+    margin-top: 1rem;
+  }
+}
+
+.__buttons-row {
+  margin-top: 2rem;
+  border-top: 1px;
+
+  button:first-of-type {
+    margin-right: 1rem;
+  }
+}
