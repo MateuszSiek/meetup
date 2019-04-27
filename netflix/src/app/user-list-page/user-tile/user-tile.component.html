@@ -1,7 +1,7 @@
 <div class="__user">
   <div class="image-container"  [appHighlight]="5">
     <img [src]="user.avatar" [class.__edit-mode]="isEditMode">
-    <i *ngIf="isEditMode" class="material-icons edit-icon">edit</i>
+    <i routerLink="/edit" [queryParams]="{id: user.id}" *ngIf="isEditMode" class="material-icons edit-icon">edit</i>
   </div>
   <h3 class="__username">
     {{ user.name }}
