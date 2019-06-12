@@ -1,9 +1,9 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {User} from '../models/user';
-import {UsersService} from '../services/users.service';
-import {Language} from '../models/language';
-import {LanguagesService} from '../services/languages.service';
+import {User} from '../../models/user';
+import {UsersService} from '../../services/users.service';
+import {Language} from '../../models/language';
+import {LanguagesService} from '../../services/languages.service';
 
 
 @Component({
